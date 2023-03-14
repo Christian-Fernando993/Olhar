@@ -1,0 +1,80 @@
+.s-hero{
+    .whats{
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+        width: 100%;
+        max-width: 80px;
+    }
+}
+
+
+.modalForm{
+    background-color: white;
+    width: 100%;
+    max-width: 48rem;
+    height: 30rem;
+    border: 2px solid #5a78ff;
+    position: fixed;
+    bottom: 7rem;
+    right: 1rem;
+    display: none;
+     &.ativo{
+        display: block;
+    }
+    .modal{
+        .fechar{
+            width: 50px;
+            height: 50px;
+            top: 0px;
+            right: 0px;
+            position: absolute;
+            background:#5a78ff url('../imgs/fechar.svg') no-repeat center center;
+        }
+        .content-top{
+            background-color: #5a78ff;
+            padding: 1.5rem 0rem 1.5rem 0 ;
+            margin-bottom: 2rem;
+            h3{
+                width: 35rem;
+                margin-left: 2rem ;
+                font-size: 1.6rem;
+                color: #ffffff;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+        form{
+            display: grid;
+            margin: 0 auto;
+            input{
+                border: 2px solid #7f9bff !important;
+                width: 100%;
+                max-width: 35rem;
+                height: 4rem;
+                padding: .7rem .5rem;
+                box-sizing: border-box;
+                border: 2px solid #222;
+                margin-bottom: 1rem;
+                border: none;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+            }
+            button{
+                width: 100%;
+                max-width: 35rem;
+                height: 4rem;
+                background-color: #5a78ff;
+                color: #ffffff;
+                margin: 0 auto;
+                // border-radius: 16px;
+                transition: all .3s ease-in;
+                font-size: 1.6rem;
+                &:hover{
+                    color: #5a78ff;
+                    background-color: #ffffff;  
+                    border: 2px solid #5a78ff;
+                }
+            }
+        }
+    }
+}

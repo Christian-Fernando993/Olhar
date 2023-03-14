@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <title>Fazendo BTN de Whatsapp - Flutuante</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <div class="s-hero">
+        <div class="container">
+            <div class="whats heartbeat">
+                <a href="#" data-modal="abrir">
+                    <img src="./imgs/whatsapp3.webp" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modalForm" data-modal="container">
+        <div class="modal">
+            <button class="fechar" data-modal="fechar"></button>
+            <div class="content-top">
+                <h3>Olá! Preencha os campos abaixo para iniciar a conversa no WhatsApp</h3>
+            </div>
+
+            <div class="formulario">
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                    <input id="00N6f00000FmTIj" maxlength="100" name="00D4P0000010vdU" size="20" type="hidden" value="LEAD CAPTURADO PELO CADASTRO BOTÃO DO WHATSAPP">
+
+                    <input id="nome" type="text" name="first_name" required="" placeholder="Nome: *" >
+                    <input id="telefone" type="email"  name="email" required="" placeholder="E-mail: *" >
+                    <input id= "email" type="phone" name="phone" required="" placeholder="Telefone com DDD: *" maxlength="15" onkeyup="handlePhone(event)">
+                   
+                    <button class="send" type="submit" >Iniciar Conversa</button>
+
+                    <input id="lead_source" maxlength="100" name="lead_source" size="20" type="hidden" value="Link do WhatsApp do Site">
+                    <input name="oid" type="hidden" value="00D4P0000010vdU">
+                    <input name="retURL" type="hidden" value="https://api.whatsapp.com/send?phone=5531986548748">
+                </form> 
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>

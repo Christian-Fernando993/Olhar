@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+button{
+    cursor: pointer;
+}
+body{
+    background: black;
+}
